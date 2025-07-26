@@ -1,0 +1,107 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(60,60,120,0.18);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal {
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 8px 32px rgba(60,60,120,0.18);
+  padding: 36px 32px 24px 32px;
+  min-width: 320px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 18px;
+  border: 3px solid #6366f1;
+}
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.name {
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+  background: linear-gradient(90deg, #6366f1 0%, #3b82f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+.meta {
+  font-size: 1.08rem;
+  color: #232946;
+  margin-bottom: 4px;
+  text-align: center;
+  font-weight: 500;
+}
+.meta b {
+  color: #232946;
+  font-weight: 700;
+}
+.closeBtn {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  background: #e0e7ff;
+  color: #232946;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.13s, color 0.13s;
+  box-shadow: 0 2px 8px rgba(60,60,120,0.10);
+}
+.closeBtn:hover {
+  background: #6366f1;
+  color: #fff;
+}
+.dark .modal {
+  background: #232946;
+  color: #f3f3f3;
+  box-shadow: 0 8px 32px rgba(60,60,120,0.28);
+}
+.dark .name {
+  background: linear-gradient(90deg, #f7c948 0%, #fbbf24 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.dark .meta {
+  color: #f7c948;
+}
+.dark .meta b {
+  color: #f3f3f3;
+}
+.dark .closeBtn {
+  background: #f7c948;
+  color: #232946;
+}
+.dark .closeBtn:hover {
+  background: #f3f3f3;
+  color: #232946;
+} 
